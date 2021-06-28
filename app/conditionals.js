@@ -2,9 +2,17 @@
 
 function largerNum(num1, num2) {
     if (num1 > num2){
+<<<<<<< HEAD
         return num1}
     else return num2
     }
+=======
+        return(num1)
+    }
+    else return(num2)
+
+}
+>>>>>>> 62b03a66da01660ea5bb17727f26859a7da5d471
 
 // 2. Given two numbers, amount correct and amount possible of a test, return the corresponding letter grade.
 // Example: 
@@ -18,6 +26,7 @@ function largerNum(num1, num2) {
 // remember that to find a letter grade you need to multiply by 100
 function testGrader(score, possible) {
     let grade = ((score/possible)*100)
+<<<<<<< HEAD
     if (grade >= 90){
         return "A"
     }
@@ -33,6 +42,19 @@ function testGrader(score, possible) {
     else return "F"
 }
 
+=======
+        if(grade >= 90)
+            return("A")
+        else if(grade >= 80)
+            return("B")
+        else if(grade >= 70)
+            return("C")
+        else if(grade >= 60)
+            return("D")
+        else if(grade >= 50)
+            return("F")
+    }
+>>>>>>> 62b03a66da01660ea5bb17727f26859a7da5d471
 
 // --------------------------------------------
 
@@ -46,6 +68,7 @@ function testGrader(score, possible) {
 //night  (22 -24 and 1 - 4): "good night"
 //Make sure your ranges are inclusive
 
+<<<<<<< HEAD
 //the hour has to be less than or equal to 21, and greater than or equal to 18
 
 function timeOfDayGreeting(hour) {
@@ -63,6 +86,21 @@ function timeOfDayGreeting(hour) {
     //(over 98.6) and additionally if the person should go to the hospital 
     //(at or above 103) 'fever go to hospital' (hint: try this with string concatenation), 
     //if it is under return 'no fever'
+=======
+function timeOfDayGreeting(hour) {
+   if(hour >= 1 and hour <=4)
+        return("Good night!")
+    if (hour >=5) and (hour<=11)
+        return("Good morning!")
+    if (hour >=12) and (hour<=17)
+        return("Good afternoon!")
+    if (hour>=18) and (hour<=21)
+        return("Good evening!")
+    }
+
+
+//4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
+>>>>>>> 62b03a66da01660ea5bb17727f26859a7da5d471
 function isFever(temp) {
 if(temp<= 98.6){
     return "no fever"
