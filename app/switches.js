@@ -1,4 +1,9 @@
-// 1. Given a string with the value of a day of the week, return the number that that day is in the week. A second argument will be provided to determine if should start week on Monday if true, else Sunday if false. If the string is not a day of the week but is bad input, then return the string 'That's not a day of the week'.
+// 1. Given a string with the value of a day of the week, 
+//return the number that that day is in the week. A second argument 
+//will be provided to determine if should start week on Monday if true, 
+//else Sunday if false. If the string is not a day of the week but is bad input, 
+//then return the string 'That's not a day of the week'.
+
 // Example: 
     // input: 'Sunday', false
     // output: 1
@@ -6,15 +11,51 @@
     // input: 'Sunday', true
     // output: 7
 
-function daysPosition(day, offset) {
 
+//switches use a strict equality. Instead of a bunch of else ifs, 
+//you can use a switch. if it's this, give me that. if it's this, give me that. 
+//tbh i'd just use an array. but here's the switch.
+function daysPosition(day, offset) {
+    let output = 0
+    if(offset){
+        output = -1
+    }
+    switch(day,toLowerCase()){
+        case "sunday":
+            output +=  1
+            break;
+        case "monday":
+            output +=  2 
+            break;
+        case "tuesday":
+            output +=  3
+            break;
+        case "wednesday":
+            output +=  4
+            break;
+        case "thursday":
+            output +=  5
+            break;
+        case "friday":
+            output +=  6
+            break;
+        case "saturday":
+            output +=  7
+            break;
+        default:
+            output =  "That's not a day of the week."
+    }
+    if(output === 0 && offset){
+        output =7
+    }
+    return offset
 }
 
 
 // --------------------------------------------
 
 
-/** 2. Given a both a score and a score for par, return the corresponding term:
+/** 2. Given both a score and a score for par, return the corresponding term:
  *           difference |   term
  *    -----------------------------------
  *  (score == 1) || -3  |   "Ace"

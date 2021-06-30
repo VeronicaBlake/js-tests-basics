@@ -41,7 +41,7 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-   if(hour >= 1 and hour <=4)
+   if(hour >= 1) and (hour <=4)
         return("Good night!")
     if (hour >=5) and (hour<=11)
         return("Good morning!")
