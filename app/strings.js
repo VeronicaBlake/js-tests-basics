@@ -1,6 +1,7 @@
 // Write a function that returns the character from a string at a given position
 function letterAtPosition(str, position) {
-    return str[position]
+    let result = str.charAt(position)
+    return result
 }
 
 // Write a function that will join two strings with an optional separating character 

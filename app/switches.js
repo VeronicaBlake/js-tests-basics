@@ -12,6 +12,7 @@
     // output: 7
 
 
+<<<<<<< HEAD
 //switches use a strict equality. Instead of a bunch of else ifs, 
 //you can use a switch. if it's this, give me that. if it's this, give me that. 
 //tbh i'd just use an array. but here's the switch.
@@ -50,6 +51,9 @@ function daysPosition(day, offset) {
     }
     return offset
 }
+=======
+} 
+>>>>>>> 86764558d941fa5e0630939a3e4bd4600dc8b447
 
 
 // --------------------------------------------
